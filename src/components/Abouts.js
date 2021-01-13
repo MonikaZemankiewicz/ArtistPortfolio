@@ -23,7 +23,6 @@ const Abouts = ({ page }) => {
   const [value, setValue] = React.useState(0)
 
   const { category, desc } = abouts[value]
-  console.log(desc)
 
   return (
     <section className="section jobs">

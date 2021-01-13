@@ -63,7 +63,7 @@ const Wrapper = styled.section`
     .about-text {
       margin: 2rem;
       height: 11rem;
-      width: 15rem;
+      width: fit-content;
       margin-left: auto;
       margin-right: auto;
       border-radius: 1rem;
