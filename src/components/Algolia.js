@@ -60,7 +60,6 @@ const Search = () => {
         searchClient={searchClient}
       >
         <SearchBox />
-
         <Container className="section-center">
           <NewHits />
         </Container>
@@ -199,9 +198,8 @@ const Wrapper = styled.section`
         border-radius: 1rem;
       }
       button {
-        background: var(--clr-grey-5);
-        border-radius: var(--radius);
-        display: none;
+        background: var(--clr-purple);
+        border-radius: 1rem;
         svg {
           fill: var(--clr-white);
         }
