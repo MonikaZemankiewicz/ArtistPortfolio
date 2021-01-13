@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
+import SEO from "../components/SEO"
 
 const Contact = ({
   data: {
@@ -10,6 +11,8 @@ const Contact = ({
   const { name, email, phoneNumber } = nodes[0]
   return (
     <Layout>
+      <SEO title="Contact" description="This is the contact page" />
+
       <section className="contact-page">
         <article className="contact-form">
           <div className="contact-info">

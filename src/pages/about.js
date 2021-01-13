@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
 import Abouts from "../components/Abouts"
+import SEO from "../components/SEO"
 
 const About = ({
   data: {
@@ -13,6 +14,8 @@ const About = ({
   const { title, info, image } = nodes[0]
   return (
     <Layout>
+      <SEO title="About" description="This is the about page" />
+
       <section className="about-page">
         <div className="section-center about-center">
           {<Image fluid={image.fluid} className="about-img"></Image>}

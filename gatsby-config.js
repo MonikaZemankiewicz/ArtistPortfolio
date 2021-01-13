@@ -5,14 +5,15 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Artistic Portfolio",
-    description: "This is Artistic Portfolio Site",
+    description:
+      "This is an Artistic Portfolio Site. The Site belongs to Basia Zemankiewicz.",
     author: "@MonikaZemankiewicz",
     siteUrl: "https://zemankiewicz-art.netlify.app",
   },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    //`gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     {

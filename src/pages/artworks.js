@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Artworks from "../components/Artworks"
 import styled from "styled-components"
+import SEO from "../components/SEO"
 
 const ArtworksPage = ({
   data: {
@@ -12,6 +13,8 @@ const ArtworksPage = ({
   return (
     <Wrapper>
       <Layout>
+        <SEO title="Gallery" description="This is the gallery page" />
+
         <section className="projects-page">
           <Artworks artworks={artworks} title="Gallery" page />
         </section>

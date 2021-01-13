@@ -6,6 +6,7 @@ import Services from "../components/Services"
 import Abouts from "../components/Abouts"
 import Artworks from "../components/Artworks"
 import styled from "styled-components"
+import SEO from "../components/SEO"
 
 export default ({ data }) => {
   const {
@@ -15,6 +16,7 @@ export default ({ data }) => {
   return (
     <Wrapper>
       <Layout>
+        <SEO title="Home" description="This is the home page" />
         <Hero />
         <Artworks artworks={artworks} title="Featured artworks" showLink />
         <Services />
