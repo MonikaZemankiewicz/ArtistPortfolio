@@ -25,13 +25,21 @@ const contentfulQuery = `
     }
   }
 `
-function pageToAlgoliaRecord({ id, description, title, category, image }) {
+function pageToAlgoliaRecord({
+  id,
+  description,
+  title,
+  category,
+  image,
+  avaible,
+}) {
   return {
     objectID: id,
     title,
     description: { description },
     category,
     image: { ...image.fluid },
+    avaible,
   }
 }
 

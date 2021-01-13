@@ -4,6 +4,7 @@ import Image from "gatsby-image"
 import Title from "./Title"
 import algoliasearch from "algoliasearch/lite"
 import { FaExpandAlt } from "react-icons/fa"
+import { FaStore } from "react-icons/fa"
 
 import { InstantSearch, SearchBox, connectHits } from "react-instantsearch-dom"
 
@@ -13,7 +14,16 @@ const searchClient = algoliasearch(
 )
 const NewHits = connectHits(({ hits }) => {
   return hits.map(item => {
-    const { objectID, image, title, description } = item
+    const {
+      objectID,
+      image,
+      title,
+      avaible,
+      description: { description },
+      category,
+      url,
+    } = item
+    console.log(url)
     return (
       <article key={objectID}>
         <div className="container">
@@ -24,8 +34,21 @@ const NewHits = connectHits(({ hits }) => {
             </a>
           </div>
         </div>
-        <h4>{title}</h4>
-        <p>{description}</p>
+        <h3>{title}</h3>
+        <div className="section">
+          <p>- {category} -</p>
+          <p> {description.description}</p>
+          {avaible && (
+            <div>
+              <p className="avaible">Avaible for sale</p>
+              <div className="project-links">
+                <a href={url}>
+                  <FaStore className="project-icon" />
+                </a>
+              </div>
+            </div>
+          )}
+        </div>
       </article>
     )
   })
@@ -49,6 +72,35 @@ const Search = () => {
 
 const Wrapper = styled.section`
   background: var(--clr-grey-10);
+
+  h3 {
+    font: "Architects Daughter";
+  }
+
+  .section {
+    margin: 2rem;
+    height: 12rem;
+    box-shadow: var(--dark-shadow);
+    border-radius: var(--radius);
+    transition: var(--transition);
+    border: 1px grey;
+    padding: 1rem;
+    background: var(--clr-grey-10);
+  }
+  p {
+    margin-block-end: 0.5em;
+    font-size: 1rem;
+  }
+
+  .avaible {
+    font-weight: bold;
+  }
+
+  .project-icon {
+    color: var(--clr-burgundy);
+    margin-bottom: 0rem;
+    margin-right: 0rem;
+  }
   .section-center {
     margin-top: 4rem;
     max-width: var(--max-width);
@@ -74,6 +126,7 @@ const Wrapper = styled.section`
       overflow: hidden;
       border-radius: var(--radius);
       background: var(--clr-burgundy);
+      margin-bottom: 0.5rem;
       &:hover .img {
         opacity: 0.2;
       }
