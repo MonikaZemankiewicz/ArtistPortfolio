@@ -561,6 +561,7 @@ About Page
 .about-img {
   margin-bottom: 2rem;
   height: 30rem;
+  border-radius: var(--radius);
 }
 
 .about-text .section-title {
