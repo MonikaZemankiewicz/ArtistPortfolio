@@ -4,12 +4,12 @@ import styled from "styled-components"
 const SearchButtons = ({ artworks, setArtworks, setBackToAll }) => {
   const [index, setIndex] = React.useState(0)
   const categories = [
+    "all",
     ...new Set(
       artworks.map(artwork => {
         return artwork.category
       })
     ),
-    "all",
   ]
 
   const showArtworks = (category, categoryIndex) => {
