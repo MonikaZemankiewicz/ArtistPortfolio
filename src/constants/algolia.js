@@ -2,6 +2,7 @@ const contentfulQuery = `
   {
     allContentfulArtworks {
       nodes {
+        id
         avaible
         date
         description {
