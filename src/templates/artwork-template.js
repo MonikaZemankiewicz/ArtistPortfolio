@@ -61,8 +61,17 @@ const Wrapper = styled.section`
     }
 
     .about-text {
-      padding: 0rem 2.5rem;
+      margin: 2rem;
+      height: 11rem;
+      width: 15rem;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 1rem;
+      padding: 1rem;
+      border: 2px solid #555;
+      background: rgba(140, 115, 115, 0.3);
     }
+
     .shop-icon {
       color: white;
       font-size: 2rem;
@@ -89,10 +98,21 @@ const Wrapper = styled.section`
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 2rem;
+      border-radius: 1rem;
     }
 
     p {
       text-transform: uppercase;
+    }
+    .comments-wrapper {
+      margin: 3rem auto;
+      background: rgba(140, 115, 115, 0.7);
+      max-width: 800px;
+      border-radius: 1rem;
+    }
+    #disqus_thread {
+      margin: 1rem 1rem;
+      border-radius: 1rem;
     }
   }
 `

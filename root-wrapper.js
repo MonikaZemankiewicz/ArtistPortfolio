@@ -203,17 +203,6 @@ p {
 .social-link:hover {
   color: var(--clr-primary-5);
 }
-.comments-wrapper {
-  margin: 3rem auto;
-  background: var(--clr-primary-1);;
-  max-width: 800px;
-  border-radius: 1rem;
-}
-#disqus_thread {
-  background: var(--clr-primary-1);
-  margin: 1rem 1rem;
-  border-radius: 1rem;
-}
 `
 
 export const wrapRootElement = ({ element }) => {
