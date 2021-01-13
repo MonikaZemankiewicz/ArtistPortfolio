@@ -66,6 +66,7 @@ const Wrapper = styled.section`
       width: fit-content;
       margin-left: auto;
       margin-right: auto;
+      border-radius: 1rem;
       padding: 1rem;
       border: 2px solid #555;
       background: rgba(140, 115, 115, 0.3);
@@ -97,7 +98,6 @@ const Wrapper = styled.section`
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 2rem;
-      border-radius: 1rem;
     }
 
     p {
