@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
-import Title from "./Title"
 import algoliasearch from "algoliasearch/lite"
 import { FaExpandAlt } from "react-icons/fa"
 import { FaStore } from "react-icons/fa"
+import logo from "../assets/search-by-algolia-light-background.png"
 
 import { InstantSearch, SearchBox, connectHits } from "react-instantsearch-dom"
 
@@ -23,7 +23,6 @@ const NewHits = connectHits(({ hits }) => {
       category,
       url,
     } = item
-    console.log(url)
     return (
       <article key={objectID}>
         <div className="container">
@@ -56,16 +55,19 @@ const NewHits = connectHits(({ hits }) => {
 const Search = () => {
   return (
     <Wrapper>
-      <Title title="Algolia Search" />
       <InstantSearch
         indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME}
         searchClient={searchClient}
       >
         <SearchBox />
+
         <Container className="section-center">
           <NewHits />
         </Container>
       </InstantSearch>
+      <div className="algolia-logo">
+        <img src={logo} alt="logo-algolia " height="15px" width="100px" />
+      </div>
     </Wrapper>
   )
 }
@@ -73,8 +75,9 @@ const Search = () => {
 const Wrapper = styled.section`
   background: var(--clr-grey-10);
 
-  h3 {
-    font: "Architects Daughter";
+  .algolia-logo {
+    text-align: center;
+    margin-top: 1rem;
   }
 
   .section {
@@ -192,10 +195,13 @@ const Wrapper = styled.section`
       input {
         border: transparent;
         padding: 0.5rem 1rem;
-        outline-color: var(--clr-grey-9);
+        outline-color: var(--clr-grey-10);
+        border-radius: 1rem;
       }
       button {
         background: var(--clr-grey-5);
+        border-radius: var(--radius);
+        display: none;
         svg {
           fill: var(--clr-white);
         }
