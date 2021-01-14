@@ -39,7 +39,7 @@ const NewHits = connectHits(({ hits }) => {
           <p> {description.description}</p>
           {avaible && (
             <div>
-              <p className="avaible">Avaible for sale</p>
+              <p className="avaible">Available for sale</p>
               <div className="project-links">
                 <a href={url}>
                   <FaStore className="project-icon" />
