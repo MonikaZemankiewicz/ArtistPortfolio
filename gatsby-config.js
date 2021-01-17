@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: "Artistic Portfolio of Basia Zemankiewicz",
     description:
-      "Check out the artistic portfolio to get to know the artist, order your custom artwork, buy a ready one or just simply find an inspiration.",
+      "Check out the artistic portfolio to get to know the artist, order your custom artwork, buy a ready one or to just simply find an inspiration.",
     author: "@MonikaZemankiewicz",
     siteUrl: "https://zemankiewicz-art.netlify.app",
   },
@@ -16,6 +16,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
