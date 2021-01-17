@@ -28,7 +28,6 @@ const Abouts = ({ page }) => {
     <section className="section jobs">
       <Title title="Bio" />
       <div className="jobs-center">
-        {/* buttons */}
         <div className="btn-container">
           {abouts.map((item, index) => {
             return (

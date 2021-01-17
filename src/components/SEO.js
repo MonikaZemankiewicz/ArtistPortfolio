@@ -20,6 +20,10 @@ const SEO = ({ title, description }) => {
   return (
     <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
       <meta name="description" content={description || siteDescription} />
+      <meta
+        name="google-site-verification"
+        content="jreS2-rEdp66VF8Ir9bRqUa0BhDJ_6qizHBQhOpqSVg"
+      />
     </Helmet>
   )
 }

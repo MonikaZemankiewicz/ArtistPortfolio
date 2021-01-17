@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Artistic Portfolio",
+    title: "Artistic Portfolio of Basia Zemankiewicz",
     description:
-      "This is an Artistic Portfolio Site. The Site belongs to Basia Zemankiewicz.",
+      "Check out the artistic portfolio to get to know the artist, order your custom artwork, buy a ready one or just simply find an inspiration.",
     author: "@MonikaZemankiewicz",
     siteUrl: "https://zemankiewicz-art.netlify.app",
   },
