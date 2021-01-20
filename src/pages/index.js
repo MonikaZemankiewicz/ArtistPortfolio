@@ -16,7 +16,7 @@ export default ({ data }) => {
   return (
     <Wrapper>
       <Layout>
-        <SEO title="Artistic Portfolio - Basia Zemankiewicz" />
+        <SEO title="Artistic Portfolio of Basia Zemankiewicz" />
         <Hero />
         <Artworks artworks={artworks} title="Featured artworks" showLink />
         <Services />
