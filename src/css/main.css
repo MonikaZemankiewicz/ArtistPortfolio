@@ -406,6 +406,11 @@ Hero
   color: #e1e1e1;
 }
 
+.hero h4 {
+  color: var(--clr-fresh-blue);
+  font-size: 1.2rem;
+}
+
 .hero-center {
   height: 100%;
   display: grid;
