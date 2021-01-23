@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-csp`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-disqus`,
