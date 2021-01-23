@@ -3,6 +3,7 @@ import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
+import Background from "../components/Background"
 
 const query = graphql`
   {
@@ -22,21 +23,23 @@ const Hero = () => {
     },
   } = useStaticQuery(query)
   return (
-    <header className="hero">
-      <div className="section-center hero-center">
-        <article className="hero-info">
-          <div>
-            <h1> Basia Zemankiewicz</h1>
-            <h4>My artistic portfolio</h4>
-            <Link to="/contact" className="btn">
-              contact me
-            </Link>
-            <SocialLinks />
-          </div>
-        </article>
-        <Image fluid={fluid} className="hero-img"></Image>
-      </div>
-    </header>
+    <Background>
+      <header className="hero">
+        <div className="section-center hero-center">
+          <article className="hero-info">
+            <div>
+              <h1> Basia Zemankiewicz</h1>
+              <h4>My artistic portfolio</h4>
+              <Link to="/contact" className="btn">
+                contact me
+              </Link>
+              <SocialLinks />
+            </div>
+          </article>
+          <Image fluid={fluid} className="hero-img"></Image>
+        </div>
+      </header>
+    </Background>
   )
 }
 
