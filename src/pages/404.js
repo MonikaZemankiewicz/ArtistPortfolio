@@ -9,7 +9,7 @@ const Error = () => {
       <SEO title="Error" description="This is the error page" />
       <main className="error-page">
         <div className="error-container">
-          <h1>ojej, nie ma strony</h1>
+          <h2>We can't find that page</h2>
           <Link to="/" className="btn">
             back home
           </Link>
