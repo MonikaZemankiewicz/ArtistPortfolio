@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import SEO from "../components/SEO"
-import SubBackground from "../components/SubBackground"
+import Background from "../components/Background"
 
 const Contact = ({
   data: {
@@ -13,7 +13,7 @@ const Contact = ({
   return (
     <Layout>
       <SEO title="Contact" description="This is the contact page" />
-      <SubBackground>
+      <Background>
         <section className="contact-page">
           <article className="contact-form">
             <div className="contact-info">
@@ -56,7 +56,7 @@ const Contact = ({
             </form>
           </article>
         </section>
-      </SubBackground>
+      </Background>
     </Layout>
   )
 }

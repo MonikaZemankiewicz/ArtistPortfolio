@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import SubBackground from "../components/SubBackground"
+import Background from "../components/Background"
 
 const order = () => {
   return (
     <Layout>
       <SEO title="Order" description="This is the order page" />
-      <SubBackground>
+      <Background>
         <section className="contact-page">
           <article className="contact-form">
             <h3> Describe your order</h3>
@@ -46,7 +46,7 @@ const order = () => {
             </form>
           </article>
         </section>
-      </SubBackground>
+      </Background>
     </Layout>
   )
 }
