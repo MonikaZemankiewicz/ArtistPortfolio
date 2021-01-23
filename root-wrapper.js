@@ -120,7 +120,6 @@ p {
   }
   body {
     font-size: 1rem;
-    background-image: url("../assets/background.png") !important;
   }
   h2,
   h3,
