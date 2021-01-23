@@ -684,7 +684,6 @@ Pages
 .error-page,
 .about-page,
 .contact-page {
-  background-image: url("../assets/background.png") !important;
   min-height: calc(100vh - 5rem - 9rem);
 }
 .details-page {

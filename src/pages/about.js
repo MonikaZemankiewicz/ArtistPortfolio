@@ -5,6 +5,7 @@ import Title from "../components/Title"
 import Image from "gatsby-image"
 import Abouts from "../components/Abouts"
 import SEO from "../components/SEO"
+import SubBackground from "../components/SubBackground"
 
 const About = ({
   data: {
@@ -18,16 +19,17 @@ const About = ({
         title="About"
         description="This is the about page with an Artist Statement"
       />
-
-      <section className="about-page">
-        <div className="section-center about-center">
-          {<Image fluid={image.fluid} className="about-img"></Image>}
-          <article className="about-text">
-            <Title title={title} />
-            <p>{info.info}</p>
-          </article>
-        </div>
-      </section>
+      <SubBackground>
+        <section className="about-page">
+          <div className="section-center about-center">
+            {<Image fluid={image.fluid} className="about-img"></Image>}
+            <article className="about-text">
+              <Title title={title} />
+              <p>{info.info}</p>
+            </article>
+          </div>
+        </section>
+      </SubBackground>
       <Abouts page />
     </Layout>
   )
