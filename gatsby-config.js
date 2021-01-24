@@ -16,7 +16,15 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-netlify`,
+    `gatsby-plugin-preact`,
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "/*": ["Content-Security-Policy: policy"],
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
