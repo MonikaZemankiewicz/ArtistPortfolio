@@ -131,7 +131,7 @@ p {
 .btn {
   text-transform: uppercase;
   background: var(--clr-burgundy);
-  color: var(--clr-primary-9);
+  color: var(--clr-white);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;

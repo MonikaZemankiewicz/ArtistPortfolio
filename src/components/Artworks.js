@@ -65,7 +65,7 @@ const Wrapper = styled.section`
       position: relative;
       overflow: hidden;
       border-radius: var(--radius);
-      background: var(--clr-primary-7);
+      background: var(--clr-green-blue);
       &:hover .img {
         opacity: 0.2;
       }

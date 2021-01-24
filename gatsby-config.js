@@ -16,7 +16,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
