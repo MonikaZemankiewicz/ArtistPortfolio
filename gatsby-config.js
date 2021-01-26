@@ -21,6 +21,7 @@ module.exports = {
       options: {
         headers: {
           "/*": ["Content-Security-Policy: policy"],
+          "/*": ["Permissions-Policy: policy"],
         },
       },
     },
