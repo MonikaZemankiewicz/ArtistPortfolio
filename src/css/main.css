@@ -398,6 +398,9 @@ Hero
   padding-top: 5rem;
   height: 100vh;
   position: relative;
+  background-image: url("../assets/background1.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero h1 {
@@ -685,6 +688,7 @@ Pages
 .about-page,
 .contact-page {
   min-height: calc(100vh - 5rem - 9rem);
+  background-image: url("../assets/background.png") !important;
 }
 .details-page {
   background-image: url("../assets/bwbackground.jpg") !important;
