@@ -168,6 +168,28 @@ p {
   background: var(--clr-grey-10);
 }
 
+/*Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1f1d1d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(172, 169, 169);
+  border-radius: 0.5rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(216, 211, 211);
+}
+
 /* page links */
 /* social links */
 .social-links {
@@ -236,7 +258,7 @@ Navbar
   height: 50px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 850px) {
   .toggle-btn {
     display: none;
   }

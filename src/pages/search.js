@@ -29,6 +29,10 @@ const Wrapper = styled.main`
   nav {
     background: black;
   }
+
+  .projects-page {
+    min-height: calc(100vh - 9rem);
+  }
 `
 
 export const query = graphql`
