@@ -585,10 +585,17 @@ Abouts
   background-color: var(--clr-burgundy);
   border-radius: var(--radius);
 }
+
 .active-btn {
   color: var(--clr-white-blue);
   background-color: var(--clr-burgundy);
   border-radius: var(--radius);
+}
+
+.active-btn:hover,
+.active-btn:focus {
+  outline: none;
+  border: none;
 }
 
 .job-desc {
@@ -856,4 +863,34 @@ Contact Page/Order Page
   border-bottom-right-radius: var(--radius);
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+}
+
+/*
+===============
+Modal
+===============
+*/
+
+.modal__close-btn {
+  background-color: transparent;
+  border: none;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 400;
+}
+
+.modal__close-btn:hover {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.modal__close-btn:focus {
+  outline: none;
+  border: none;
+}
+
+.modal__img {
 }

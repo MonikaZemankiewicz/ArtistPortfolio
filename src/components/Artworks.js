@@ -4,6 +4,7 @@ import Artwork from "./Artwork"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import SearchButtons from "./SearchButtons"
+import Modal from "react-modal"
 
 const Artworks = ({ artworks: data, title, page }) => {
   const [artworks, setArtworks] = React.useState(data)

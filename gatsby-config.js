@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Artistic Portfolio of Basia Zemankiewicz",
+    title: "Artistic Portfolio | Basia Zemankiewicz",
     description:
       "Check out the artistic portfolio to get to know the artist, order your custom artwork, buy a ready one or to just simply find an inspiration.",
     author: "@MonikaZemankiewicz",

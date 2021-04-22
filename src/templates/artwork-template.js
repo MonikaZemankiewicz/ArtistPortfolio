@@ -3,8 +3,10 @@ import Layout from "../components/Layout"
 import Image from "gatsby-image"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-import { FaStore } from "react-icons/fa"
+import { FaStore, IoCloseCircleOutline } from "react-icons/fa"
 import { DiscussionEmbed } from "disqus-react"
+import Modal from "react-modal"
+import closebtn from "../assets/closebtn.svg"
 
 const ArtworkTemplate = ({
   data: {
@@ -18,11 +20,13 @@ const ArtworkTemplate = ({
     title: title,
   }
 
+  const [modalIsOpen, setModalIsOpen] = React.useState(false)
+
   return (
     <Wrapper>
       <Layout>
         <section className="details-page">
-          <div className="img-container">
+          <div onClick={() => setModalIsOpen(true)} className="img-container">
             <Image fluid={image.fluid} className="details-img"></Image>
           </div>
 
@@ -47,6 +51,45 @@ const ArtworkTemplate = ({
           </div>
         </section>
       </Layout>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+        ariaHideApp={false}
+        style={{
+          overlay: {
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: "rgba(41, 43, 46, 0.8)",
+            zIndex: 300,
+          },
+          content: {
+            position: "absolute",
+            top: "40px",
+            left: "40px",
+            right: "40px",
+            bottom: "40px",
+            border: "none",
+            background: "#fff",
+            overflow: "auto",
+            WebkitOverflowScrolling: "touch",
+            borderRadius: "4px",
+            outline: "none",
+            padding: "none",
+            backgroundColor: "transparent",
+          },
+        }}
+      >
+        <button
+          className="modal__close-btn"
+          onClick={() => setModalIsOpen(false)}
+        >
+          <img src={closebtn} alt="close modal" />
+        </button>
+        <Image fluid={image.fluid} className="modal__img"></Image>
+      </Modal>
     </Wrapper>
   )
 }
