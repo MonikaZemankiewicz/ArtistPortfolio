@@ -7,6 +7,7 @@ import { FaStore, IoCloseCircleOutline } from "react-icons/fa"
 import { DiscussionEmbed } from "disqus-react"
 import Modal from "react-modal"
 import closebtn from "../assets/closebtn.svg"
+import SEO from "../components/SEO"
 
 const ArtworkTemplate = ({
   data: {
@@ -25,6 +26,7 @@ const ArtworkTemplate = ({
   return (
     <Wrapper>
       <Layout>
+        <SEO title={title} description="Single artwork page" />
         <section className="details-page">
           <div onClick={() => setModalIsOpen(true)} className="img-container">
             <Image fluid={image.fluid} className="details-img"></Image>
