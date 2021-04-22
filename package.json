@@ -41,6 +41,7 @@
     "react-icons": "^4.2.0",
     "react-instantsearch-dom": "^6.8.2",
     "react-modal": "^3.13.1",
+    "react-simple-image-viewer": "0.0.8",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {

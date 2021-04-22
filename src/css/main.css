@@ -876,7 +876,7 @@ Modal
   border: none;
   -webkit-transition: -webkit-transform 0.8s ease-in-out;
   transition: transform 0.4s ease-in-out;
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
   z-index: 400;
@@ -892,5 +892,9 @@ Modal
   border: none;
 }
 
-.modal__img {
-}
+/*.modal__img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}*/
