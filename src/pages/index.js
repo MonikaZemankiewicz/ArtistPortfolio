@@ -14,7 +14,15 @@ export default ({ data }) => {
   } = data
 
   return (
-    <div>Page temporary down </div>
+       <Wrapper>
+      <Layout>
+        <SEO title="Artistic Portfolio of Basia Zemankiewicz" />
+        <Hero />
+        <Artworks artworks={artworks} title="Featured artworks" showLink />
+        <Services />
+        <Abouts showLink />
+      </Layout>
+    </Wrapper>
   )
 }
 
