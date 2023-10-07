@@ -1,15 +1,17 @@
-Artistic Portfolio made with GatsbyJS
+##Artistic Portfolio made with GatsbyJS
+
 https://zemankiewicz-art.netlify.app/
 
-Backend: Contentful
 
-Forms: Formspree
+**Backend:** Contentful
 
-Comments: DISQUS
+**Forms:** Formspree
 
-Search: Algolia
+**Comments:** DISQUS
 
-Plugins:
+**Search:** Algolia
+
+#Plugins:
 gatsby-transformer-sharp
 gatsby-plugin-sharp
 gatsby-plugin-react-helmet
