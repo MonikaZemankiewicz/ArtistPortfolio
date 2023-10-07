@@ -47,7 +47,7 @@ const Contact = ({
                 className="form-control"
                 required
               />
-              <button type="submit" className="submit-btn btn">
+              <button type="submit" className="btn submit-btn">
                 send
               </button>
             </div>
