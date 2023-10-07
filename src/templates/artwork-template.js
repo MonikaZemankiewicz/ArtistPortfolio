@@ -33,7 +33,7 @@ const ArtworkTemplate = ({
           </div>
 
           <article className="about-text">
-            <p>- {description.description} -</p>
+            <p>{description.description}</p>
             <div className="project-stack">
               {imgTag.map(item => {
                 return <span key={item.id}>{item}</span>
