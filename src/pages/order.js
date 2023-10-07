@@ -37,7 +37,7 @@ const order = () => {
               </label>
               <input type="date" name="deadline" className="form-control" />
 
-              <button type="submit" className="submit-btn btn">
+              <button type="submit" className="btn submit-btn">
                 send
               </button>
             </div>
