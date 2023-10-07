@@ -35,7 +35,7 @@ const NewHits = connectHits(({ hits }) => {
         </div>
         <h3>{title}</h3>
         <div className="section">
-          <p>- {category} -</p>
+          <p>{category}</p>
           <p> {description.description}</p>
           {avaible && (
             <div>
