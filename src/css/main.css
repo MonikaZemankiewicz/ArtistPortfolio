@@ -856,13 +856,8 @@ Contact Page/Order Page
   letter-spacing: var(--spacing);
 }
 .submit-btn {
-  display: block;
   width: 100%;
   padding: 1rem;
-  border-bottom-left-radius: var(--radius);
-  border-bottom-right-radius: var(--radius);
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
 }
 
 /*
