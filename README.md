@@ -1,8 +1,13 @@
-Backend: Strapi
+Artistic Portfolio made with GatsbyJS
+https://zemankiewicz-art.netlify.app/
+
+Backend: Contentful
 
 Forms: Formspree
 
 Comments: DISQUS
+
+Search: Algolia
 
 Plugins:
 gatsby-transformer-sharp
