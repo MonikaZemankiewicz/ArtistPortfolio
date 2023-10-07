@@ -19,7 +19,7 @@ const Artwork = ({
           <a href={`/artworks/${title}`}>
             <FaExpandAlt className="open-icon" aria-label="open-details" />
           </a>
-          <p>-{description.description}-</p>
+          <p>{description.description}</p>
           <div className="project-stack">
             {imgTag.map(item => {
               return <span key={item.id}>{item}</span>
