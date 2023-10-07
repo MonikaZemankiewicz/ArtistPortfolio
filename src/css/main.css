@@ -857,7 +857,7 @@ Contact Page/Order Page
 }
 .submit-btn {
   width: 100%;
-  padding: 1rem;
+  padding: 1rem !important;
 }
 
 /*
