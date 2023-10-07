@@ -1,4 +1,4 @@
-## Artistic Portfolio made with GatsbyJS
+# Artistic Portfolio made with GatsbyJS
 
 https://zemankiewicz-art.netlify.app/
 
@@ -11,7 +11,7 @@ https://zemankiewicz-art.netlify.app/
 
 **Search:** Algolia
 
-# Plugins:
+## Plugins:
 gatsby-transformer-sharp
 gatsby-plugin-sharp
 gatsby-plugin-react-helmet
