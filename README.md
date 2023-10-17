@@ -2,6 +2,25 @@
 
 https://zemankiewicz-art.netlify.app/
 
+## Example screenshots from the website:
+
+### Main page
+
+![Hero](/screenshots/hero.png)
+
+### Gallery:
+
+![Gallery](/screenshots/gallery.png)
+
+### Order form:
+
+![Order](/screenshots/order.png)
+
+### Artwork details with comments section:
+
+![Details](/screenshots/comments.png)
+
+## Technology stack 
 
 **Backend:** Contentful
 
@@ -24,3 +43,4 @@ https://zemankiewicz-art.netlify.app/
 + gatsby-plugin-algolia
 
 Icons: https://react-icons.github.io/react-icons/
+
